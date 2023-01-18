@@ -14,3 +14,7 @@ function generateUserData() {
         avatarPhoto: `https://avatars.dicebear.com/api/avataaars/${getRandomString(12)}.svg`
     }
 }
+
+module.exports = {
+    generateUserData, 
+};

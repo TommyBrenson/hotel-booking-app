@@ -1,0 +1,6 @@
+{
+  "port": 8080,
+  "MONGO_URI": "mongodb+srv://tommybrenson:LMfH7KH3WQhQep0C@hotel-booking.69uj89k.mongodb.net/?retryWrites=true&w=majority",
+  "ACCESS_SECRET": "bjkdR7B",
+  "REFRESH_SECRET": "Zpp0g53"
+}
