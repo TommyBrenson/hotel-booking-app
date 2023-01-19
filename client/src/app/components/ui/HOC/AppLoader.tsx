@@ -1,5 +1,6 @@
 import React, { useEffect } from 'react';
 import { useDispatch, useSelector } from 'react-redux';
+import config from '../../../config';
 import { loadBookingsList } from '../../../store/bookings';
 import { loadLikesList } from '../../../store/likes';
 import { loadReviewsList } from '../../../store/reviews';

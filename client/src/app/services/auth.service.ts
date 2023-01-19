@@ -1,7 +1,7 @@
 import { UserType, SignInDataType } from './../types/types';
 import axios from 'axios';
 import localStorageService from './localStorage.service';
-import config from '../config.json';
+import config from '../config.js';
 
 const httpAuth = axios.create({
   baseURL: `${config.apiEndPoint}/auth/`,

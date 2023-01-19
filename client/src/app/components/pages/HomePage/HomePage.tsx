@@ -2,8 +2,10 @@ import { Paper } from '@mui/material';
 import React from 'react';
 import Container from '../../common/Container';
 import { SearchRoomsForm } from '../../ui/forms';
+import config from '../../../config';
 
 const HomePage: React.FC = () => {
+  console.log(config.apiEndPoint);
   return (
     <main className='main-home__page'>
       <Container>

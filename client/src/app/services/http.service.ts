@@ -1,6 +1,6 @@
 import axios, { AxiosRequestConfig } from 'axios';
 import { toast } from 'react-toastify';
-import configFile from '../config.json';
+import configFile from '../config.js';
 import authService from './auth.service';
 import localStorageService from './localStorage.service';
 

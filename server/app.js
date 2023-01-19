@@ -36,7 +36,7 @@ async function start() {
       initDatabase();
     });
     await mongoose.connect(
-      'mongodb+srv://tommybrenson:LMfH7KH3WQhQep0C@hotel-booking.69uj89k.mongodb.net/?retryWrites=true&w=majority'
+      process.env.MONGO_URI,
     );
     console.log(chalk.green('MongoDB connected.'));
     app.listen(PORT, () => console.log(chalk.green(`Server has been started on port ${PORT}...`)));

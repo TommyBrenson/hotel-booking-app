@@ -4,7 +4,7 @@ import { useSelector } from 'react-redux';
 import { useMockData } from '../../../../hooks';
 import { getUserById } from '../../../../store/users';
 import { getDateDDMMYYYY } from '../../../../utils/formatDate';
-import config from '../../../../config.json';
+import config from '../../../../config.js';
 
 const UserProfile = ({ userId }: { userId: string }) => {
   const currentUser = useSelector(getUserById(userId));
