@@ -16,7 +16,7 @@ app.use(express.urlencoded({ extended: false }));
 app.use(cors());
 app.use('/api', routes);
 
-const PORT = process.env.PORT || config.get('port') || 8080;
+const PORT = process.env.PORT || 8080;
 app.use('/images', express.static(path.join(__dirname, 'images')));
 if (process.env.NODE_ENV === 'production') {
   console.log('production');
@@ -36,7 +36,7 @@ async function start() {
       initDatabase();
     });
     await mongoose.connect(
-      process.env.MONGO_URI,
+      process.env.MONGO_URI || config.get("MONGO_URI"),
     );
     console.log(chalk.green('MongoDB connected.'));
     app.listen(PORT, () => console.log(chalk.green(`Server has been started on port ${PORT}...`)));

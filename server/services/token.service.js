@@ -4,11 +4,11 @@ const config = require('config');
 
 class TokenService {
   generate(payload) {
-    const accessToken = jwt.sign(payload, config.get('ACCESS_SECRET'), {
+    const accessToken = jwt.sign(payload, process.env.ACCESS_SECRET, {
       expiresIn: '1h',
     });
 
-    const refreshToken = jwt.sign(payload, config.get('REFRESH_SECRET'));
+    const refreshToken = jwt.sign(payload, process.env.REFRESH_SECRET);
 
     return {
       accessToken,
@@ -29,7 +29,7 @@ class TokenService {
 
   validateRefresh(refreshToken) {
     try {
-      return jwt.verify(refreshToken, config.get('REFRESH_SECRET'));
+      return jwt.verify(refreshToken, process.env.REFRESH_SECRET);
     } catch (error) {
       return null;
     }
@@ -37,7 +37,7 @@ class TokenService {
 
   validateAccess(accessToken) {
     try {
-      return jwt.verify(accessToken, config.get('ACCESS_SECRET'));
+      return jwt.verify(accessToken, process.env.ACCESS_SECRET);
     } catch (error) {
       return null;
     }

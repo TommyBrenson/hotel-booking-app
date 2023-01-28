@@ -1,0 +1,33 @@
+version: "3.8"
+
+services:
+  server:
+    build:
+      context: ./server
+      dockerfile: Dockerfile
+    image: hotel-booking-app:server
+    container_name: hotel-server
+    command: npm start
+    restart: always
+    ports:
+      - 8080:8080
+    networks:
+      - react-express
+  
+  client:
+    build:
+      context: ./client
+      dockerfile: Dockerfile
+    image: hotel-booking-app:client
+    container_name: hotel-client
+    command: npm start
+    restart: always
+    ports:
+      - 3000:3000
+    stdin_open: true
+    networks:
+      - react-express
+    depends_on:
+      - server
+networks:
+  react-express:
