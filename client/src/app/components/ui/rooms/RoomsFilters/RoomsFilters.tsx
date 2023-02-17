@@ -44,7 +44,7 @@ const RoomsFilter: React.FC<RoomsFilterProps> = ({ onReset }) => {
 
   return (
     <section className='filters__wrapper'>
-      <h2 className='visually-hidden'>Поиск номеров в отеле toxin</h2>
+      <h2 className='visually-hidden'>Поиск номеров в отеле React Hotel</h2>
       <RoomsFilterList data={data} handleChange={handleChangeFilter}>
         <DateOfStayField data={data} onChange={handleChangeFilter} title='Дата пребывания в отеле' />
         <GuestsCounter data={data} onChange={handleChangeFilter} />

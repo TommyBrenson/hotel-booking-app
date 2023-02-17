@@ -19,7 +19,7 @@ const UserProfile = ({ userId }: { userId: string }) => {
   if (currentUser) {
     return (
       <main className='main-profile__page'>
-        <h1 className='visually-hidden'>Профиль пользователя отеля toxin</h1>
+        <h1 className='visually-hidden'>Профиль пользователя отеля React Hotel</h1>
         <h2>Страница пользователя {`${currentUser?.firstName} ${currentUser?.secondName}`}</h2>
         <div className='user-card'>
           <div>
@@ -52,7 +52,7 @@ const UserProfile = ({ userId }: { userId: string }) => {
   }
   return (
     <main className='main-profile__page'>
-      <h1 className='visually-hidden'>Профиль пользователя отеля toxin</h1>
+      <h1 className='visually-hidden'>Профиль пользователя отеля React Hotel</h1>
       <h2>Страница пользователя не найдена</h2>
     </main>
   );
