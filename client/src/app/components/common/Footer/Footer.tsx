@@ -16,7 +16,7 @@ const Footer = () => {
             <div className='footer-logo'>
               <Logo />
               <p className='footer-logo__text'>
-                Бронирование номеров в лучшем отеле 2022 года
+                Бронирование номеров в лучшем отеле 2023 года
               </p>
             </div>
           </div>
@@ -35,7 +35,7 @@ const Footer = () => {
       <Divider variant='fullWidth' className='footer-divider' />
       <Container>
         <div className='footer-bottom'>
-          <p className='footer-copyright'>Copyright © 2022 React Hotel отель. Все права защищены.</p>
+          <p className='footer-copyright'>Copyright © 2023 React Hotel отель. Все права защищены.</p>
         </div>
       </Container>
     </footer>

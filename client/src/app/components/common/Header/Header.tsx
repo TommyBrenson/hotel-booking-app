@@ -16,13 +16,13 @@ const Header: React.FC = () => {
 
   return (
     <header className='header'>
-      <Container>
+      <Container className='header-wrapper'>
         <div className='header__inner'>
           <Logo className='header__logo' />
           <NavList routes={navigationRoutes} className='header-nav' />
           {isLoggedIn && !authErrors ? (
             <>
-              <Divider orientation='vertical' flexItem className='header__divider' />
+              {/* <Divider orientation='vertical' flexItem className='header__divider' /> */}
               <NavProfile />
             </>
           ) : (

@@ -1,49 +1,65 @@
 .header {
-  height: 70px;
-  position: relative;
+  background-color: #fff;
+}
 
+.header__logo {
   display: flex;
   align-items: center;
+}
 
-  background-color: #fff;
-  box-shadow: 0 10px 20px $accent5;
-  z-index: 10;
+.header-wrapper {
+  display: flex !important;
 }
 
 .header__inner {
   display: flex;
-  align-items: center;
-}
-
-.header__logo {
-  margin-right: 50px;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  gap: 20px;
+  width: 100%;
+  margin: 10px 0;
 }
 
 .header-nav {
-  margin-left: 50px;
-  & .nav-item {
-    padding: 0;
-    margin-right: 10px;
-    &:last-child {
-      margin-right: 0;
-    }
-  }
-}
+  display: flex;
+  align-items: center;
+  justify-content: center;
 
-.header__divider {
-  &.MuiDivider-root {
-    margin-right: 15px;
-    margin-left: auto;
+  & .nav-wrapper {
+    flex-wrap: wrap;
+    gap: 20px;
   }
 }
 
 .header-buttons {
-  margin-left: auto;
   display: flex;
-  gap: 10px;
   justify-content: space-between;
+  align-items: center;
+  gap: 10px;
+
+  & a {
+    height: fit-content;
+    text-decoration: none;
+  }
 }
 
-.header-buttons-button {
-  text-decoration: none;
+.profile-wrapper {
+  justify-self: flex-end;
+}
+
+@media (max-width: 568px) {
+  .header__inner {
+    flex-direction: column;
+  
+    & * {
+      justify-content: center;
+    }
+  }
+
+  .header-nav {
+    & .nav-wrapper {
+      flex-direction: column !important;
+      align-items: center;
+    }
+  }
 }

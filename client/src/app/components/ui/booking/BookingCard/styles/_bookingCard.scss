@@ -5,14 +5,18 @@
 
 .booking-card__wrapper {
   display: flex;
+  flex-wrap: wrap;
   justify-content: space-between;
+  gap: 30px;
 }
 
 .booking-content {
-  width: 60%;
+  flex: 1;
+  width: 100%;
 }
 
 .booking-card__btns {
+  flex: 1;
   position: relative;
   width: 300px;
   display: flex;

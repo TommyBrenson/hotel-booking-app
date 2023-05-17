@@ -35,9 +35,10 @@ export const adminRoutes = [
 
 export const navigationRoutes = [
   { path: '/rooms', name: 'Доступные номера' },
-  { path: '/services', name: 'Услуги' },
-  { path: '/vacancy', name: 'Вакансии' },
-  { path: '/news', name: 'Новости' },
+  // { path: '/services', name: 'Услуги' },
+  // { path: '/vacancy', name: 'Вакансии' },
+  // { path: '/news', name: 'Новости' },
+  { path: '/contacts', name: 'Контакты' },
   { path: '/agreement', name: 'Соглашения' },
 ];
 
