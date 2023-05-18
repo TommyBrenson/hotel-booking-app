@@ -11,6 +11,8 @@ const Login = React.lazy(() => import('../layouts/login'));
 const Main = React.lazy(() => import('../layouts/main'));
 const Profile = React.lazy(() => import('../layouts/profile'));
 const Rooms = React.lazy(() => import('../layouts/rooms'));
+const Policies = React.lazy(() => import('../layouts/policies'));
+const Contacts = React.lazy(() => import('../layouts/contacts'));
 
 export const userProfileRoutes = [
   { path: '/profile/booking', name: 'Мои бронирования', icon: StarBorderIcon },
@@ -39,13 +41,15 @@ export const navigationRoutes = [
   // { path: '/vacancy', name: 'Вакансии' },
   // { path: '/news', name: 'Новости' },
   { path: '/contacts', name: 'Контакты' },
-  { path: '/agreement', name: 'Соглашения' },
+  { path: '/policies', name: 'Соглашения' },
 ];
 
 export const publicRoutes = [
   { path: '/', component: Main, exact: true },
   { path: '/login/:type?', component: Login, exact: true },
   { path: '/rooms/:roomId?/', component: Rooms, exact: true },
+  { path: '/policies', component: Policies, exact: true },
+  { path: '/contacts', component: Contacts, exact: true },
 ];
 
 export const privateRoutes = [{ path: '/profile/:userId?/:route?', component: Profile, exact: true }];

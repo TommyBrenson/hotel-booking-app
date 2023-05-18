@@ -1,0 +1,47 @@
+.conacts-page {
+
+}
+
+.contacts-wrapper {
+    display: flex;
+    margin-top: 20px;
+}
+
+.contacts-info {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+
+.contacts-details {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+}
+
+.smalltext_details {
+    font-size: 0.85rem;
+}
+
+.contacts_details-phone, .contacts_details-feedback {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+
+    & a {
+        text-decoration: none;
+        color: $blue;
+
+        &:hover {
+            text-decoration: underline;
+        }
+    }
+}
+
+.feedback_link {
+    font-size: 1.5rem;
+}
+
+.phone_number {
+    font-size: 1.3rem;
+}

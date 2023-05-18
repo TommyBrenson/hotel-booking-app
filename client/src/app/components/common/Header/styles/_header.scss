@@ -15,7 +15,8 @@
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
-  gap: 20px;
+  gap: 40px;
+  row-gap: 10px;
   width: 100%;
   margin: 10px 0;
 }
@@ -44,14 +45,15 @@
 }
 
 .profile-wrapper {
-  justify-self: flex-end;
+  margin-left: auto;
 }
 
 @media (max-width: 568px) {
   .header__inner {
     flex-direction: column;
-  
-    & * {
+
+    & > * {
+      margin: auto;
       justify-content: center;
     }
   }
