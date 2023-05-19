@@ -10,7 +10,7 @@ const HomePage: React.FC = () => {
     <main className='main-home__page'>
       <Container>
         <div className='main-home__wrapper'>
-          <h1 className='visually-hidden'>Поиск номеров в отеле toxin result school</h1>
+          <h1 className='visually-hidden'>Поиск номеров в отеле React Hotel result school</h1>
           <Paper elevation={3} className='form-card searchRooms-form'>
             <h2>Найдём номера под ваши пожелания</h2>
             <SearchRoomsForm />

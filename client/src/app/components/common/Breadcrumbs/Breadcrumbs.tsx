@@ -59,6 +59,14 @@ const routeConfig = [
     breadcrumb: 'Главная',
   },
   {
+    path: '/policies',
+    breadcrumb: 'Соглашения',
+  },
+  {
+    path: '/contacts',
+    breadcrumb: 'Контакты',
+  },
+  {
     path: '/rooms',
     breadcrumb: 'Доступные номера',
   },

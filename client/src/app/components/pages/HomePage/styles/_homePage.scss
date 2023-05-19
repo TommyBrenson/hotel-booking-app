@@ -1,6 +1,7 @@
 .main-home__page {
   background: url('../../../../assets/img/slide3.jpg') no-repeat;
   background-size: cover;
+  overflow: hidden;
 }
 
 .main-home__wrapper {
@@ -12,9 +13,17 @@
 }
 
 .main__text-wishes {
-  color: $accent;
+  color: $light;
   margin-bottom: 20px;
+  margin-top: 10px;
   max-width: 300px;
   text-align: right;
   align-self: flex-end;
+}
+
+@media (max-width: 768px) {
+  .main-home__wrapper {
+    justify-content: center;
+    align-items: center;
+  } 
 }

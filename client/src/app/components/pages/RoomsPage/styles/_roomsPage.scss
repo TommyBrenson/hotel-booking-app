@@ -1,18 +1,39 @@
 .rooms-page {
   display: flex;
+  flex-wrap: wrap;
+  margin-top: 20px;
+  gap: 45px;
 }
 
 .rooms-page__filters {
-  width: 325px;
+  flex: 1;
+  min-width: 275px;
+
+  & .filters__wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+}
+
+.filters__wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  & .filters__form {
+    padding: 0;
+  }
 }
 
 .rooms-page__sorting {
   display: flex;
+  flex-wrap: wrap;
   gap: 10px;
 }
 
 .rooms-page__rooms {
-  flex: 1;
+  flex: 3;
 }
 
 .rooms__title {

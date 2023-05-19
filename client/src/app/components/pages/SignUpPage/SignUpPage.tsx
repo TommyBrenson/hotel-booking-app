@@ -13,7 +13,7 @@ const SignUpPage: React.FC = () => {
           <h2>Регистрация</h2>
           <RegisterForm />
           <div className='login-form__footer'>
-            <span>Уже есть аккаунт на Toxin?</span>
+            <span>Уже есть аккаунт на React Hotel?</span>
             <Link to='./signIn' className='login-form__link'>
               <Button variant='outlined' size='small'>
                 Войти
