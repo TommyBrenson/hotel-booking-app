@@ -4,18 +4,24 @@
 
 .contacts-wrapper {
     display: flex;
-    margin-top: 20px;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 40px;
+    margin: 20px 0;
 }
 
 .contacts-info {
     display: flex;
     flex-direction: column;
+    flex-grow: 1;
     gap: 30px;
+    max-width: 650px;
 }
 
 .contacts-details {
     display: flex;
     justify-content: space-between;
+    gap: 20px;
     width: 100%;
 }
 
